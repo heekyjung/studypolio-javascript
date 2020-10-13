@@ -2,9 +2,9 @@
 <html>
     <head>
         <style>
-            h1{
+            /* h1{
                 border: 5px solid pink;
-            }
+            } */
         </style>
     </head>
     <body>
@@ -12,21 +12,30 @@
         <input type='button' value='day' onclick='
             document.querySelector("body").style.backgroundColor="white";
             document.querySelector("body").style.color="black";
+            document.querySelector("#a1").style.color="black";
+            document.querySelector("#a2").style.color="black";
+            document.querySelector("#a3").style.color="black";
         '>
         <input type='button' value='night' onclick="
-            document.querySelector('body').style.backgroundColor='black';
             document.querySelector('body').style.color='white';
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('#a1').style.color='white';
+            document.querySelector('#a2').style.color='white';
+            document.querySelector('#a3').style.color='white';
         ">
         <input type='button' value='spring' onclick="
             document.querySelector('body').style.color='grey';
             document.querySelector('body').style.backgroundColor='pink';
-            document.querySelector('h1').style.borderColor='grey'
+            document.querySelector('#a1').style.color='grey';
+            document.querySelector('#a2').style.color='grey';
+            document.querySelector('#a3').style.color='grey';
+            // document.querySelector('h1').style.borderColor='grey'
         ">
         <h1>WEB</h1>
         <ol>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
+            <li><a href='1.html' id='a1'>html</a></li>
+            <li><a href='2.css' id='a2'>css</a></li>
+            <li><a href='3.js' id='a3'>js</a></li>
         </ol>
         WEB is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aut, sunt iure repellendus corrupti ad modi dignissimos magni deserunt delectus animi perferendis doloremque, facere aspernatur accusantium nobis minima dolorum amet??
     </body>
