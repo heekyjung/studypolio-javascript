@@ -6,26 +6,31 @@
                 border: 5px solid pink;
             } */
         </style>
+        <script>
+        </script>
     </head>
     <body>
         <!-- <h1 style='border:5px solid blue;background-color: green;'>WEB</h1> -->
         <input type='button' value='day' onclick='
-            document.querySelector("body").style.backgroundColor="white";
-            document.querySelector("body").style.color="black";
+            var bodyTag = document.querySelector("body");
+            bodyTag.style.backgroundColor="white";
+            bodyTag.style.color="black";
             document.querySelector("#a1").style.color="black";
             document.querySelector("#a2").style.color="black";
             document.querySelector("#a3").style.color="black";
         '>
         <input type='button' value='night' onclick="
-            document.querySelector('body').style.color='white';
-            document.querySelector('body').style.backgroundColor='black';
+            var bodyTag = document.querySelector('body');
+            bodyTag.style.color='white';
+            bodyTag.style.backgroundColor='black';
             document.querySelector('#a1').style.color='white';
             document.querySelector('#a2').style.color='white';
             document.querySelector('#a3').style.color='white';
         ">
         <input type='button' value='spring' onclick="
-            document.querySelector('body').style.color='grey';
-            document.querySelector('body').style.backgroundColor='pink';
+            var bodyTag = document.querySelector('body');
+            bodyTag.style.color='grey';
+            bodyTag.style.backgroundColor='pink';
             document.querySelector('#a1').style.color='grey';
             document.querySelector('#a2').style.color='grey';
             document.querySelector('#a3').style.color='grey';
